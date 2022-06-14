@@ -146,6 +146,7 @@ a:link {
   height: 170px;
   overflow: hidden;
   border-radius: 20px 20px 0 0;
+  position: relative;
 }
 .restaurant__img img {
   object-fit: cover;
@@ -166,6 +167,10 @@ a:link {
 .restaurant__card:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+.restaurant__new {
+  position: absolute;
+  right: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
