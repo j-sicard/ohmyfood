@@ -17,6 +17,62 @@
   font-size: 1em;
 }
 
+body {
+  box-sizing: border-box;
+  max-width: 1560px;
+  margin: 0;
+  padding: 0;
+}
+
+.bloc_page {
+  margin: auto;
+  width: 100%;
+}
+.bloc_page p {
+  font-family: roboto, sherif, sans sherif;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Shrikhand", sherif, sans sherif;
+}
+
+/* ***** ENLEVER LES LIEN SOULIGNER ***** */
+a:link {
+  text-decoration: none;
+}
+
+.location {
+  width: 100%;
+  height: 350px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.location__bar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(236, 234, 234);
+  box-shadow: inset 0em 0.3em rgba(49, 49, 49, 0.04);
+}
+.location__bar i {
+  margin: 15px;
+}
+.location__text {
+  width: 68%;
+  font-family: "Roboto", sherif, sans sherif;
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+
 /* ***** Liste Accueil/functioning__list ***** */
 .functioning {
   width: 100%;
@@ -35,7 +91,7 @@
   height: 70px;
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin: 0 0 15px 10px;
   background-color: whitesmoke;
   border-radius: 18px;
   box-shadow: 0px 5px 10px 0px gainsboro;
@@ -66,55 +122,50 @@
   color: #9356dc;
 }
 
-body {
-  box-sizing: border-box;
-  max-width: 1560px;
-  margin: 0;
-  padding: 0;
-}
-
-.bloc_page {
-  margin: auto;
+/* ***** RESTAURANT ***** */
+.restaurant {
   width: 100%;
-}
-.bloc_page p {
-  font-family: roboto, sherif, sans sherif;
-}
-
-header {
-  width: 100%;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Shrikhand", sherif, sans sherif;
-}
-
-.location {
-  width: 100%;
-  height: 350px;
   background-color: whitesmoke;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-bottom: 50px;
 }
-.location__bar {
+.restaurant__title {
+  padding-top: 20px;
+}
+.restaurant__card {
+  width: 90%;
+  height: 260px;
+  background-color: white;
+  margin: auto;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px 0px gainsboro;
+}
+.restaurant__img {
   width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(236, 234, 234);
-  box-shadow: inset 0em 0.3em rgba(49, 49, 49, 0.04);
+  height: 170px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
 }
-.location__bar i {
-  margin: 15px;
+.restaurant__img img {
+  object-fit: cover;
+  max-width: 100%;
 }
-.location__text {
-  width: 68%;
-  font-family: "Roboto", sherif, sans sherif;
-  text-align: center;
-  padding: 20px 0 20px 0;
+.restaurant__text {
+  color: black;
+  margin-left: 20px;
+}
+.restaurant__text h3 {
+  margin-bottom: 0;
+  font-size: 1.4em;
+}
+.restaurant__text p {
+  margin-top: 7px;
+  font-size: 1.2em;
+}
+.restaurant__card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */

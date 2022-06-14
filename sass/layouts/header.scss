@@ -21,3 +21,7 @@ header {
   justify-content: center;
   font-family: $title-font;
 }
+/* ***** ENLEVER LES LIEN SOULIGNER ***** */
+a:link {
+  text-decoration: none;
+}
