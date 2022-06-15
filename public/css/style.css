@@ -15,6 +15,7 @@
   box-shadow: 0 5px 5px 0 rgb(180, 180, 180);
   color: white;
   font-size: 1em;
+  cursor: pointer;
 }
 .location__btn:hover {
   opacity: 0.5;
@@ -31,6 +32,7 @@
   border-radius: 20px;
   padding: 20px 0 0 15px;
   position: relative;
+  cursor: pointer;
 }
 .selection__btn h4 {
   margin: 0;
@@ -45,6 +47,14 @@
   bottom: 20px;
   right: 20px;
   font-weight: 600;
+}
+
+.comeback__btn {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: -90px;
+  font-size: 1.6em;
 }
 
 body {
@@ -67,6 +77,7 @@ header {
   align-items: center;
   justify-content: center;
   font-family: "Shrikhand", sherif, sans sherif;
+  position: relative;
 }
 
 /* ***** ENLEVER LES LIEN SOULIGNER ***** */
@@ -217,10 +228,6 @@ footer a:hover {
   margin-top: 7px;
   font-size: 1.2em;
 }
-.restaurant__card:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
 .restaurant__new {
   width: 100px;
   height: 40px;
@@ -268,6 +275,10 @@ footer a:hover {
   font-weight: 595;
   font-size: 1.8em;
   margin-left: 20px;
+}
+.menu__title__heart {
+  position: absolute;
+  right: 50px;
 }
 .menu__title i {
   margin-left: 50px;
