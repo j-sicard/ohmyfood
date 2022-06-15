@@ -21,6 +21,32 @@
   box-shadow: 0 8px 15px 0 rgb(0, 0, 0);
 }
 
+.selection__btn {
+  width: 90%;
+  height: 70px;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 5px 0 gainsboro;
+  border-radius: 20px;
+  padding: 20px 0 0 15px;
+  position: relative;
+}
+.selection__btn h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+.selection__btn p {
+  margin: 0;
+}
+.selection__btn span {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-weight: 600;
+}
+
 body {
   box-sizing: border-box;
   max-width: 1560px;
@@ -214,6 +240,61 @@ footer a:hover {
   bottom: 40px;
   right: 40px;
   font-size: 2em;
+}
+
+.menu {
+  overflow: hidden;
+  width: 100%;
+  height: 270px;
+  position: relative;
+}
+.menu img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+.menu__title {
+  width: 100%;
+  height: 100px;
+  background-color: whitesmoke;
+  border-radius: 40px 40px 0 0;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+}
+.menu__title h2 {
+  font-family: "Shrikhand", sherif, sans sherif;
+  font-weight: 595;
+  font-size: 1.8em;
+  margin-left: 20px;
+}
+.menu__title i {
+  margin-left: 50px;
+  font-size: 1.6em;
+}
+
+.selection {
+  width: 100%;
+  background-color: whitesmoke;
+  font-family: "Roboto", sherif, sans sherif;
+}
+.selection h3 {
+  margin: 0px 0 30px 15px;
+  color: rgb(129, 128, 128);
+  font-weight: 400;
+  font-size: 1.3em;
+}
+.selection .button__validation {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.command {
+  padding-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

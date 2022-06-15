@@ -19,3 +19,30 @@
     box-shadow: 0 8px 15px 0 rgb(0 0 0);
   }
 }
+
+.selection__btn {
+  width: 90%;
+  height: 70px;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 5px 0$color-shadow;
+  border-radius: 20px;
+  padding: 20px 0 0 15px;
+  position: relative;
+
+  & h4 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+  }
+  & p {
+    margin: 0;
+  }
+  & span {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-weight: 600;
+  }
+}
