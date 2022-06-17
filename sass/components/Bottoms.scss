@@ -15,6 +15,7 @@
   color: white;
   font-size: 1em;
   cursor: pointer;
+  transition: opacity 1s;
   &:hover {
     opacity: 0.5;
     box-shadow: 0 8px 15px 0 rgb(0 0 0);
@@ -30,6 +31,7 @@
   box-shadow: 0 5px 5px 0$color-shadow;
   border-radius: 20px;
   padding: 20px 0 0 15px;
+  overflow: hidden;
   position: relative;
   cursor: pointer;
 

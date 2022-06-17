@@ -16,6 +16,7 @@
   color: white;
   font-size: 1em;
   cursor: pointer;
+  transition: opacity 1s;
 }
 .location__btn:hover {
   opacity: 0.5;
@@ -31,6 +32,7 @@
   box-shadow: 0 5px 5px 0 gainsboro;
   border-radius: 20px;
   padding: 20px 0 0 15px;
+  overflow: hidden;
   position: relative;
   cursor: pointer;
 }
@@ -132,6 +134,7 @@ footer a:hover {
 }
 .location__bar i {
   margin: 15px;
+  color: black;
 }
 .location__text {
   width: 68%;
@@ -278,7 +281,8 @@ footer a:hover {
 }
 .menu__title__heart {
   position: absolute;
-  right: 50px;
+  right: 0px;
+  bottom: -5px;
 }
 .menu__title i {
   margin-left: 50px;
@@ -306,6 +310,128 @@ footer a:hover {
 
 .command {
   padding-top: 30px;
+}
+
+/* ***** BOUTON DU COEUR TOTAL ***** */
+.boite {
+  width: 40px;
+  height: 30pxpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
+/*  BOUTONS - checkbox like  */
+.checkbox-like {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.checkbox-like.checkbox-like--position {
+  position: initial;
+  margin-top: 20px;
+}
+
+.checkbox-like input[type=checkbox]:checked ~ .unchecked {
+  display: none;
+}
+
+.checkbox-like input[type=checkbox]:checked ~ .checked {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0);
+}
+
+.checkbox-like input[type=checkbox],
+.checkbox-like .checked {
+  display: none;
+  animation: like 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes like {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    background: linear-gradient(to bottom, #9356dc, #ff79da);
+    -webkit-background-clip: text;
+  }
+  100% {
+    background: linear-gradient(to bottom, #9356dc, #ff79da);
+    -webkit-background-clip: text;
+  }
+}
+/* ***** VALIDATION DES MENU ***** */
+.check_move {
+  width: 80px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -100px;
+  top: -5px;
+  background-color: #99e2d0;
+  text-align: right;
+}
+
+.selection__btn:hover .check_move {
+  -webkit-animation: slide-left 0.9s ease-in-out 0.2s both;
+  animation: slide-left 0.9s ease-in-out 0.2s both;
+}
+
+.validation {
+  font-size: 2em;
+  color: white;
+}
+
+.selection__btn:hover .validation {
+  -webkit-animation: rotate-center 1s ease-in-out 0.2s both;
+  animation: rotate-center 1s ease-in-out 0.2s both;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
