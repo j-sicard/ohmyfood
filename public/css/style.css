@@ -23,34 +23,45 @@
   box-shadow: 0 8px 15px 0 rgb(0, 0, 0);
 }
 
+/* ****** BARRE DES SELECTION DES ENTREE PLAT MENU ****** */
 .selection__btn {
-  width: 90%;
-  height: 70px;
+  width: 95%;
+  height: 80px;
   background-color: white;
   margin: auto;
   margin-bottom: 15px;
   box-shadow: 0 5px 5px 0 gainsboro;
   border-radius: 20px;
-  padding: 20px 0 0 15px;
   overflow: hidden;
-  position: relative;
   cursor: pointer;
-}
-.selection__btn h4 {
-  margin: 0;
-  margin-bottom: 10px;
-  font-size: 1.3em;
+  display: flex;
+  align-items: center;
 }
 .selection__btn p {
   margin: 0;
 }
-.selection__btn span {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  font-weight: 600;
+.selection__btn__text {
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-grow: 1;
+  padding: 30px 0 10px 10px;
+}
+.selection__btn__text span {
+  font-size: 1.3em;
+  font-weight: 800;
+}
+.selection__btn__prix {
+  width: 20px;
+  height: 100%;
+  font-size: 1em;
+  font-weight: 900;
+  margin: 70px 20px 0 0;
+  text-align: right;
 }
 
+/* ***** BOUTON DE RETOUR A LA PAGE D ACCUEIL ***** */
 .comeback__btn {
   width: 20px;
   height: 20px;
@@ -293,6 +304,7 @@ footer a:hover {
   width: 100%;
   background-color: whitesmoke;
   font-family: "Roboto", sherif, sans sherif;
+  /* ***** BOUTTON "COMMANDER DE BAS DE PAGE" ***** */
 }
 .selection h3 {
   margin: 0px 0 30px 15px;
@@ -366,53 +378,36 @@ footer a:hover {
 }
 /* ***** VALIDATION DES MENU ***** */
 .check_move {
-  width: 80px;
-  height: 100px;
+  width: 0px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  right: -100px;
-  top: -5px;
+  overflow: hidden;
   background-color: #99e2d0;
-  text-align: right;
+  transition: width 425.957ms ease 0ms;
 }
 
 .selection__btn:hover .check_move {
-  -webkit-animation: slide-left 0.9s ease-in-out 0.2s both;
-  animation: slide-left 0.9s ease-in-out 0.2s both;
+  width: 70px;
 }
 
 .validation {
   font-size: 2em;
   color: white;
+  width: 0px;
+  height: 30px;
+  opacity: 0;
+  transition: all 326.511ms ease 0ms;
 }
 
 .selection__btn:hover .validation {
-  -webkit-animation: rotate-center 1s ease-in-out 0.2s both;
-  animation: rotate-center 1s ease-in-out 0.2s both;
+  width: 30px;
+  opacity: 1;
+  -webkit-animation: rotate-center 0.6s both;
+  animation: 527.069ms ease 157.568ms 1 normal both running rotate-center;
 }
 
-@-webkit-keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
-}
-@keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
-}
 @-webkit-keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);

@@ -53,51 +53,33 @@
 
 /* ***** VALIDATION DES MENU ***** */
 .check_move {
-  width: 80px;
-  height: 100px;
+  width: 0px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  right: -100px;
-  top: -5px;
+  overflow: hidden;
   background-color: #99e2d0;
-  text-align: right;
+  transition: width 425.957ms ease 0ms;
 }
 .selection__btn:hover .check_move {
-  -webkit-animation: slide-left 0.9s ease-in-out 0.2s both;
-  animation: slide-left 0.9s ease-in-out 0.2s both;
+  width: 70px;
 }
 
 .validation {
   font-size: 2em;
   color: white;
+  width: 0px;
+  height: 30px;
+  opacity: 0;
+  transition: all 326.511ms ease 0ms;
 }
 
 .selection__btn:hover .validation {
-  -webkit-animation: rotate-center 1s ease-in-out 0.2s both;
-  animation: rotate-center 1s ease-in-out 0.2s both;
-}
-
-@-webkit-keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
-}
-@keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
+  width: 30px;
+  opacity: 1;
+  -webkit-animation: rotate-center 0.6s both;
+  animation: 527.069ms ease 157.568ms 1 normal both running rotate-center;
 }
 
 @-webkit-keyframes rotate-center {
