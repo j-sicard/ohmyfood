@@ -37,6 +37,13 @@
   display: flex;
   align-items: center;
 }
+@media screen and (min-width: 1600px) {
+  .selection__btn {
+    width: 100%;
+    margin: 0;
+    margin-top: 30px;
+  }
+}
 .selection__btn p {
   margin: 0;
 }
@@ -72,7 +79,7 @@
 
 body {
   box-sizing: border-box;
-  max-width: 1560px;
+  max-width: 1920px;
   margin: 0;
   padding: 0;
 }
@@ -108,10 +115,18 @@ footer {
   flex-direction: column;
   padding-left: 25px;
 }
+@media screen and (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 footer a {
   color: white;
 }
 footer h2 {
+  width: 100%;
+  height: 50px;
   font-family: "Shrikhand", sherif, sans sherif;
   font-weight: 500;
 }
@@ -121,6 +136,11 @@ footer i {
 footer a {
   font-size: 1.4em;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  footer a {
+    width: 50%;
+  }
 }
 footer a:hover {
   color: #9356dc;
@@ -158,14 +178,33 @@ footer a:hover {
 .functioning {
   width: 100%;
 }
+.functioning h2 {
+  margin-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .functioning h2 {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+}
 .functioning ul {
   width: 100%;
   margin: 0;
   margin-left: 20px;
   padding: 0;
 }
-.functioning h2 {
-  margin-left: 20px;
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+  .functioning ul {
+    display: flex;
+    margin-left: 2%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .functioning ul {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 .functioning__list {
   width: 90%;
@@ -181,8 +220,19 @@ footer a:hover {
   font-weight: 900;
   font-size: 1.1em;
 }
+@media screen and (min-width: 768px) {
+  .functioning__list {
+    width: 27%;
+    margin-right: 4%;
+    margin-bottom: 50px;
+    font-size: 0.9em;
+  }
+}
 .functioning__list:hover {
   background-color: rgba(147, 86, 220, 0.1);
+}
+.functioning__list:hover i {
+  color: #9356dc;
 }
 .functioning__num {
   width: 25px;
@@ -199,8 +249,16 @@ footer a:hover {
   margin-right: 50px;
   color: rgb(128, 128, 128);
 }
-.functioning:hover i {
-  color: #9356dc;
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+  .functioning i {
+    visibility: hidden;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .functioning i {
+    margin-right: 30%;
+  }
 }
 
 /* ***** RESTAURANT ***** */
@@ -209,8 +267,27 @@ footer a:hover {
   background-color: whitesmoke;
   padding-bottom: 50px;
 }
+@media screen and (min-width: 1600px) {
+  .restaurant {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .restaurant__title {
   padding: 20px 0 0 25px;
+}
+@media screen and (min-width: 768px) {
+  .restaurant__title {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .restaurant__title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
 .restaurant__card {
   width: 90%;
@@ -223,6 +300,15 @@ footer a:hover {
   box-shadow: 0px 5px 10px 0px gainsboro;
   overflow: hidden;
   position: relative;
+}
+@media screen and (min-width: 1600px) {
+  .restaurant__card {
+    width: 47%;
+    margin-bottom: 50px;
+  }
+  .restaurant__card:hover {
+    transform: scale(1.1);
+  }
 }
 .restaurant__img {
   width: 100%;
@@ -290,6 +376,12 @@ footer a:hover {
   font-size: 1.8em;
   margin-left: 20px;
 }
+@media screen and (min-width: 768px) {
+  .menu__title h2 {
+    width: 100%;
+    text-align: center;
+  }
+}
 .menu__title__heart {
   position: absolute;
   right: 0px;
@@ -307,6 +399,13 @@ footer a:hover {
   font-family: "Roboto", sherif, sans sherif;
   /* ***** BOUTTON "COMMANDER DE BAS DE PAGE" ***** */
 }
+@media screen and (min-width: 1600px) {
+  .selection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 .selection .button__validation {
   width: 100%;
   height: 150px;
@@ -319,11 +418,22 @@ footer a:hover {
   padding-top: 30px;
   /* ***** TITRE DES MENU PLAT DESSERT ***** */
 }
+@media screen and (min-width: 1600px) {
+  .command {
+    width: 30%;
+    margin-left: 50px;
+  }
+}
 .command__title {
   margin: 0px 0 30px 15px;
   color: rgb(129, 128, 128);
   font-weight: 400;
   font-size: 1.3em;
+}
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+  .command__title {
+    margin-left: 30px;
+  }
 }
 .command__title__border {
   border-bottom: 3px solid #99e2d0;
@@ -477,7 +587,7 @@ footer a:hover {
 .loading {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;

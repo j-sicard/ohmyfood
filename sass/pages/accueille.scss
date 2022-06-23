@@ -29,15 +29,29 @@
 .functioning {
   width: 100%;
 
+  & h2 {
+    margin-left: 20px;
+    @include tablet-desktop {
+      width: 100%;
+      text-align: center;
+      margin-left: 0;
+    }
+  }
+
   & ul {
     width: 100%;
     margin: 0;
     margin-left: 20px;
     padding: 0;
-  }
+    @include tablet-only {
+      display: flex;
+      margin-left: 2%;
+    }
 
-  & h2 {
-    margin-left: 20px;
+    @include desktop-only {
+      display: flex;
+      justify-content: space-around;
+    }
   }
 
   &__list {
@@ -53,8 +67,19 @@
     cursor: pointer;
     font-weight: 900;
     font-size: 1.1em;
+
+    @include tablet-desktop {
+      width: 27%;
+      margin-right: 4%;
+      margin-bottom: 50px;
+      font-size: 0.9em;
+    }
+
     &:hover {
       background-color: rgba(147, 86, 220, 0.1);
+      i {
+        color: $color-primary;
+      }
     }
   }
   &__num {
@@ -71,9 +96,13 @@
   & i {
     margin-right: 50px;
     color: rgb(128, 128, 128);
-  }
-  &:hover i {
-    color: $color-primary;
+    @include tablet-only {
+      visibility: hidden;
+      margin: 0;
+    }
+    @include desktop-only {
+      margin-right: 30%;
+    }
   }
 }
 
@@ -83,9 +112,22 @@
   width: 100%;
   background-color: $color-quadrary;
   padding-bottom: 50px;
+  @include desktop-only {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   &__title {
     padding: 20px 0 0 25px;
+    @include tablet-desktop {
+      text-align: center;
+      margin-left: 0;
+    }
+    @include desktop-only {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 50px;
+    }
   }
 
   &__card {
@@ -99,6 +141,13 @@
     box-shadow: 0px 5px 10px 0px $color-shadow;
     overflow: hidden;
     position: relative;
+    @include desktop-only {
+      width: 47%;
+      margin-bottom: 50px;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
   }
 
   &__img {

@@ -22,6 +22,10 @@
       font-weight: 595;
       font-size: 1.8em;
       margin-left: 20px;
+      @include tablet-desktop {
+        width: 100%;
+        text-align: center;
+      }
     }
     &__heart {
       position: absolute;
@@ -41,6 +45,12 @@
   background-color: whitesmoke;
   font-family: $text-font;
 
+  @include desktop-only {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   /* ***** BOUTTON "COMMANDER DE BAS DE PAGE" ***** */
   & .button__validation {
     width: 100%;
@@ -53,13 +63,22 @@
 
 .command {
   padding-top: 30px;
-  /* ***** TITRE DES MENU PLAT DESSERT ***** */
+  @include desktop-only {
+    width: 30%;
+    margin-left: 50px;
+  }
 
+  /* ***** TITRE DES MENU PLAT DESSERT ***** */
   &__title {
     margin: 0px 0 30px 15px;
     color: rgb(129, 128, 128);
     font-weight: 400;
     font-size: 1.3em;
+
+    @include tablet-only {
+      margin-left: 30px;
+    }
+
     &__border {
       border-bottom: 3px solid #99e2d0;
       padding-bottom: 5px;
