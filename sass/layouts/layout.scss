@@ -8,8 +8,10 @@ body {
 .bloc_page {
   margin: auto;
   width: 100%;
-  font-family: roboto, sherif, sans sherif;
+  font-family: $text-font;
 }
+
+/* ***** HERDER ****** */
 
 header {
   width: 100%;

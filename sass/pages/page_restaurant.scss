@@ -11,7 +11,7 @@
   &__title {
     width: 100%;
     height: 100px;
-    background-color: whitesmoke;
+    background-color: $color-quaternary;
     border-radius: 40px 40px 0 0;
     display: flex;
     align-items: center;
@@ -42,7 +42,7 @@
 /* ***** REGROUPEMENT MENU PLAT DESSERT ***** */
 .selection {
   width: 100%;
-  background-color: whitesmoke;
+  background-color: $color-quaternary;
   font-family: $text-font;
 
   @include desktop-only {
