@@ -1,7 +1,7 @@
 /* ***** BOUTON DU COEUR TOTAL ***** */
 .boite {
   width: 40px;
-  height: 30pxpx;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1093,35 +1093,6 @@
   }
 }
 
-/* ***** DISPARITION ***** */
-
-.end {
-  -webkit-animation: blur-out-contract 1s ease-in-out both;
-  animation: 1000ms ease-in-out 3016.9ms 1 normal both running blur-out-contract;
-}
-
-@-webkit-keyframes blur-out-contract {
-  0% {
-    -webkit-filter: blur(0.01);
-    filter: blur(0.01);
-  }
-  100% {
-    letter-spacing: -0.5em;
-    -webkit-filter: blur(12px) opacity(0%);
-    filter: blur(12px) opacity(0%);
-  }
-}
-@keyframes blur-out-contract {
-  0% {
-    -webkit-filter: blur(0.01);
-    filter: blur(0.01);
-  }
-  100% {
-    letter-spacing: -0.5em;
-    -webkit-filter: blur(12px) opacity(0%);
-    filter: blur(12px) opacity(0%);
-  }
-}
 .bloc {
   width: 100%;
   height: 900px;
@@ -1132,7 +1103,6 @@
 
 .start {
   font-family: "Shrikhand";
-  color: linear-gradient(to top left, #9356dc, #ff79da);
   animation: 498.575ms ease-in-out 0ms 1 normal both running move;
 }
 
@@ -2050,36 +2020,5 @@
   }
   100% {
     opacity: 0;
-  }
-}
-
-/* ***** DISPARITION ***** */
-
-.end {
-  -webkit-animation: blur-out-contract 1s ease-in-out both;
-  animation: 631.445ms ease-in-out 3016.9ms 1 normal both running
-    blur-out-contract;
-}
-
-@-webkit-keyframes blur-out-contract {
-  0% {
-    -webkit-filter: blur(0.01);
-    filter: blur(0.01);
-  }
-  100% {
-    letter-spacing: -0.5em;
-    -webkit-filter: blur(12px) opacity(0%);
-    filter: blur(12px) opacity(0%);
-  }
-}
-@keyframes blur-out-contract {
-  0% {
-    -webkit-filter: blur(0.01);
-    filter: blur(0.01);
-  }
-  100% {
-    letter-spacing: -0.5em;
-    -webkit-filter: blur(12px) opacity(0%);
-    filter: blur(12px) opacity(0%);
   }
 }
